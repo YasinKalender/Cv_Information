@@ -1,0 +1,54 @@
+﻿@model AppUser
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <table class="table table-bordered">
+
+        <thead>
+
+            <tr>
+                <th>UserName</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Telephone</th>
+
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>@Model.UserName</td>
+                <td>@Model.FirstName</td>
+                <td>@Model.LastName</td>
+                <td>@Model.Email</td>
+                <td>@Model.Telephone</td>
+
+
+            </tr>
+
+
+        </tbody>
+
+
+
+
+
+
+    </table>
+
+
+
+    @Html.ActionLink("Bilgilerimi Güncelle", "UserUpdate", "Profile",new { id = Model.Id},new { @class="btn btn-primary"})
+
+
+</div>
+

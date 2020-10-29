@@ -1,0 +1,72 @@
+﻿@model List<AppUser>
+@{
+    ViewData["Title"] = "AllCv";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    string search = (string)ViewBag.s;
+}
+
+@if (!string.IsNullOrWhiteSpace(search))
+{
+    <div>@search için arama yaptınız <a asp-action="AllCv" asp-controller="Home">Filtreyi kaldır</a></div>
+}
+
+@using (Html.BeginForm("AllCv", "Home", FormMethod.Get))
+{
+
+    @Html.TextBox("search")
+    <button type="submit">Ara</button>
+
+
+
+}
+
+
+
+@foreach (var item in Model)
+{
+    <div class="card" style="width: 18rem;">
+        <img src="~/image/@item.Image" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@item.FirstName @item.LastName</h5>
+            @foreach (var abouts in item.Abouts)
+            {
+                <p class="card-text">@abouts.About</p>
+            }
+
+            @Html.ActionLink("Detay Göster", "CvDetails", "Home", new { id = item.Id }, new { @class = "btn btn-primary" })
+
+        </div>
+    </div>
+}
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        @if (!string.IsNullOrWhiteSpace(search))
+        {
+
+            @for (int i = 1; i <= ViewBag.sumpage; i++)
+            {
+                <li class="page-item"><a class="page-link" asp-action="AllCv" asp-route-page="@i" asp-route-search="@search">@i</a></li>
+            }
+
+        }
+
+        else
+        {
+
+            @for (int i = 1; i <= ViewBag.sumpage; i++)
+            {
+                <li class="page-item"><a class="page-link" asp-action="AllCv" asp-route-page="@i">@i</a></li>
+            }
+
+        }
+
+    </ul>
+
+    </nav>
+
+
+
+
+

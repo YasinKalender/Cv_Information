@@ -1,0 +1,25 @@
+﻿@model Cv_Information.DTOs.Dto.SkillsDto.SkillAddUpdateDto
+@{
+    ViewData["Title"] = "SkillAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Skill Add</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+
+        <label asp-for="Skill"></label>
+        <input type="text" asp-for="Skill" class="form-control" />
+        <span asp-validation-for="Skill" class="text-danger"></span>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+
+
+
+}
+

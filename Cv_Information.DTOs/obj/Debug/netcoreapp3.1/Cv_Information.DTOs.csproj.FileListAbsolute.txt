@@ -1,0 +1,12 @@
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\obj\Debug\netcoreapp3.1\Cv_Information.DTOs.csprojAssemblyReference.cache
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\obj\Debug\netcoreapp3.1\Cv_Information.DTOs.AssemblyInfoInputs.cache
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\obj\Debug\netcoreapp3.1\Cv_Information.DTOs.AssemblyInfo.cs
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\obj\Debug\netcoreapp3.1\Cv_Information.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\bin\Debug\netcoreapp3.1\Cv_Information.DTOs.deps.json
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\bin\Debug\netcoreapp3.1\Cv_Information.DTOs.dll
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\bin\Debug\netcoreapp3.1\Cv_Information.DTOs.pdb
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\bin\Debug\netcoreapp3.1\Cv_Information.Entities.dll
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\bin\Debug\netcoreapp3.1\Cv_Information.Entities.pdb
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\obj\Debug\netcoreapp3.1\Cv_Information.DTOs.csproj.CopyComplete
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\obj\Debug\netcoreapp3.1\Cv_Information.DTOs.dll
+C:\Users\ysnbj\Desktop\Cv_Information\Cv_Information.DTOs\obj\Debug\netcoreapp3.1\Cv_Information.DTOs.pdb

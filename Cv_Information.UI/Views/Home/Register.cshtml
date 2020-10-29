@@ -1,0 +1,90 @@
+﻿@model AppUserRegister
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <h1>Register</h1>
+
+
+    @using (Html.BeginForm())
+    {
+
+        <div class="form-group">
+
+            <label asp-for="Username"></label>
+            <input type="text" asp-for="Username" class="form-control" />
+            <span asp-validation-for="Username"></span>
+
+        </div>
+
+        <div class="form-group">
+
+            <label asp-for="FirstName"></label>
+            <input type="text" asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName"></span>
+
+        </div>
+
+        <div class="form-group">
+
+            <label asp-for="LastName"></label>
+            <input type="text" asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName"></span>
+
+        </div>
+
+        <div class="form-group">
+
+            <label asp-for="Email"></label>
+            <input type="text" asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email"></span>
+
+        </div>
+
+        <div class="form-group">
+
+            <label asp-for="Pass"></label>
+            <input type="text" asp-for="Pass" class="form-control" />
+            <span asp-validation-for="Pass"></span>
+
+        </div>
+
+        <div class="form-group">
+
+            <label asp-for="Telephone"></label>
+            <input type="text" asp-for="Telephone" class="form-control" />
+            <span asp-validation-for="Telephone"></span>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label asp-for="Adress"></label>
+            <input type="text" asp-for="Adress" class="form-control" />
+            <span asp-validation-for="Adress"></span>
+
+        </div>
+
+        <div class="form-group">
+
+            <label asp-for="Image"></label>
+            <input type="text" asp-for="Image" class="form-control" />
+            <span asp-validation-for="Image"></span>
+
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+
+
+
+
+
+    }
+
+</div>

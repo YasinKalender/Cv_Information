@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="~/LoginTheme/images/icons/favicon.ico" />
+    <link href="~/LoginTheme/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/LoginTheme/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" rel="stylesheet" />
+    <link href="~/LoginTheme/vendor/animate/animate.css" rel="stylesheet" />
+    <link href="~/LoginTheme/vendor/css-hamburgers/hamburgers.css" rel="stylesheet" />
+    <link href="~/LoginTheme/vendor/animsition/css/animsition.css" rel="stylesheet" />
+    <link href="~/LoginTheme/vendor/select2/select2.min.css" rel="stylesheet" />
+    <link href="~/LoginTheme/vendor/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/LoginTheme/css/main.css" rel="stylesheet" />
+    <link href="~/LoginTheme/css/util.css" rel="stylesheet" />
+    <link href="~/Theme/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @if (User.IsInRole("Admin"))
+        {
+
+            @await Component.InvokeAsync("Wrapper")
+        }
+
+       @if (User.IsInRole("Member"))
+       {
+           @await Component.InvokeAsync("Wrapper")
+       }
+
+
+
+        @RenderBody()
+    </div>
+    <script src="~/LoginTheme/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="~/LoginTheme/vendor/animsition/js/animsition.js"></script>
+    <script src="~/LoginTheme/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/LoginTheme/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/LoginTheme/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="~/LoginTheme/vendor/daterangepicker/moment.js"></script>
+    <script src="~/LoginTheme/vendor/countdowntime/countdowntime.js"></script>
+    <script src="~/LoginTheme/js/main.js"></script>
+
+
+</body>
+</html>
